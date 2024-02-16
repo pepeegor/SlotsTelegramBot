@@ -1,7 +1,7 @@
 from aiogram import Router
 from aiogram.types import Message
 
-from keyboards.reply import start
+from bot.keyboards.reply import start
 
 router = Router()
 

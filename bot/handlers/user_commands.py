@@ -2,7 +2,7 @@ from aiogram import Router
 from aiogram.filters import CommandStart
 from aiogram.types import Message, FSInputFile
 
-from keyboards.inline import main
+from bot.keyboards.inline import main
 
 router = Router()
 
@@ -27,7 +27,7 @@ Username — это уникальное имя, которое человек �
 ⁃ Для сохранения, нажмите на кнопку в правом углу.
 
 ✅Отлично. Жми кнопку "продолжить" для перехода к следующему шагу."""
-    photo = FSInputFile("data/images/start_img.jpg")
+    photo = FSInputFile("bot/data/images/start_img.jpg")
 
     await message.answer_photo(
         photo,
